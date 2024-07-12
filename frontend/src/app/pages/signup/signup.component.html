@@ -1,0 +1,17 @@
+<main class="container">
+    <form>
+        <input type="text" placeholder="Prénom" [(ngModel)]="prenom" name="prenom" required />
+        <input type="text" placeholder="Nom" [(ngModel)]="nom" name="nom" required />
+        <input type="email" placeholder="Adresse e-mail" [(ngModel)]="email" name="email" required />
+        <select (change)="onRoleChange($event)" class="custom-select">
+            @for(role of rolesList; track role.value) {
+            <option [value]="role.value">{{role.text}}</option>
+            }
+        </select>
+        <input type="password" placeholder="Mot de passe" [(ngModel)]="password" name="password" required />
+        <button class="btn btn-green" (click)="register()">Inscrivez-vous</button>
+        <small>
+            <a href="#" routerLink="/signin">Vous avez déjà un compte ?</a>
+        </small>
+    </form>
+</main>

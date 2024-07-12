@@ -1,0 +1,10 @@
+<main class="container">
+  <form>
+    <input type="email" placeholder="Adresse e-mail" [(ngModel)]="email" name="email" required />
+    <input type="password" placeholder="Mot de passe" [(ngModel)]="password" name="password" required />
+    <button class="btn btn-green" (click)="login()">Connecter</button>
+    <small>
+      <a href="#" routerLink="/signup">Vous n'avez pas de compte? Créer une</a>
+    </small>
+  </form>
+</main>

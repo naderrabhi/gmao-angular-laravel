@@ -1,0 +1,14 @@
+.home-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .content-container {
+    flex: 1;
+    padding: 50px;
+  }
+  .content-container[_ngcontent-ng-c1546899537] {
+    flex: 1;
+    padding: 0px;
+}
